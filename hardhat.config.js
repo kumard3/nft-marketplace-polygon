@@ -2,7 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require('dotenv').config();
 // const fs = require('fs');
 // const privateKey = fs.readFileSync(".secret").toString().trim() || "01234567890123456789";
-const infuraId = process.env.STAGING_ALCHEMY_KEY
+const infuraId = process.env.STAGING_INFURA_KEY
 
 module.exports = {
   defaultNetwork: "hardhat",
@@ -13,7 +13,7 @@ module.exports = {
     
     mumbai: {
       // Infura
-      url: `https://polygon-mumbai.g.alchemy.com/v2/${infuraId}`,
+      url: `https://polygon-mumbai.infura.io/v2/b4e0111cac4b4d6580e82675ab8fd39f`,
       // url: "https://rpc-mumbai.matic.today",
       accounts: [process.env.PRIVATE_KEY]
     },
